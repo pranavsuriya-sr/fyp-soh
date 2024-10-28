@@ -88,7 +88,7 @@ def forecast_next_5_steps(initial_time):
     return future_predictions
 
 # Use fixed time input for prediction (for demonstration)
-time_input = 10
+time_input = 30
 
 # Predict temperature for current input
 predicted_temp = predict_temperature(time_input, current_input, voltage_input)
