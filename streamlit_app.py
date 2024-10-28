@@ -92,13 +92,13 @@ time_input = 20
 
 # Predict temperature for current input
 predicted_temp = predict_temperature(time_input, current_input, voltage_input)
-st.write(f"### Predicted SOH: {predicted_temp:.2f} °C")
+st.write(f"### Predicted SOH: {predicted_temp:.2f} ")
 
 # Forecast future temperatures
 future_temps = forecast_next_5_steps(time_input)
 st.write("### Forecasted SOH for the Next 5 Time Steps:")
 for i, temp in enumerate(future_temps, start=1):
-    st.write(f"Time = {time_input + i}: {temp:.2f} °C")
+    st.write(f"Time = {time_input + i}: {temp:.2f} ")
 
 # Plotting the forecasted temperatures
 fig, ax = plt.subplots(figsize=(10, 6))
